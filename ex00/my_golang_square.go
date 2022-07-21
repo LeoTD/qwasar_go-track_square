@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"strconv"
 )
@@ -17,7 +18,7 @@ func main() {
 
 	if er1 != nil || er2 != nil {
 		// Atoi error
-		os.Exit(1)
+		os.Exit(0)
 	}
 
 	corner := "o"
@@ -40,6 +41,6 @@ func main() {
 				line += inside
 			}
 		}
-		println(line)
+		fmt.Println(line)
 	}
 }
